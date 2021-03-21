@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color: rgb(10, 165, 105);
+    min-height: 100vh;
+}
+section{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 4%;
+    max-width: 700px;
+    height: 500px;
+    background-color: white;
+}
+section div{
+    margin-top: 10%;
+}
+table{
+    width: 100%;
+}
+.btn{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:  rgb(219, 219, 219);
+}

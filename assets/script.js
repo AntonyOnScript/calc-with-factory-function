@@ -7,7 +7,27 @@ function createCalc() {
                 if(el.classList.contains('number')){
                     this.display.value += el.innerText
                 }
+                if(el.classList.contains('eq')){
+                    this.display.value = this.toCalc()
+                }
+                if(el.classList.contains('clear')){
+                    this.display.value = ''
+                }
+                if(el.classList.contains('del')){
+                    this.display.value = this.display.value.slice(0,-1)
+                }
             }.bind(this))
+        },
+        toCalc(){
+            try{
+                let numberfy = this.display.value
+                if(typeof eval(numberfy)==="number"){
+                    return eval(numberfy)
+                }
+                throw('error')
+            }catch(e){
+                alert(e)
+            }
         }
     }
 }

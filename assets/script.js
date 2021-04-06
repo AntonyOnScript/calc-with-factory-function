@@ -20,9 +20,9 @@ function createCalc() {
         },
         toCalc(){
             try{
-                let numberfy = this.display.value
-                if(typeof eval(numberfy)==="number"){
-                    return eval(numberfy)
+                let count = eval(count)
+                if(typeof count==="number"){
+                    return count 
                 }
                 throw('error')
             }catch(e){

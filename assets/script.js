@@ -20,7 +20,7 @@ function createCalc() {
         },
         toCalc(){
             try{
-                let count = eval(count)
+                let count = eval(this.display.value)
                 if(typeof count==="number"){
                     return count 
                 }
